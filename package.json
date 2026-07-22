@@ -1,0 +1,7 @@
+{
+  "name": "0722_pineLP",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve ."
+  }
+}
