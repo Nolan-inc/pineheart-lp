@@ -28,6 +28,95 @@
     height: auto;
     display: block;
   }
+  .sidebar-left,
+  .sidebar-right {
+    display: none;
+  }
+  @media (min-width: 1024px) {
+    .sidebar-left {
+      display: flex;
+      position: fixed;
+      top: 50%;
+      left: calc(25% - 97.5px);
+      transform: translate(-50%, -50%);
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      z-index: 100;
+    }
+    .sidebar-right {
+      display: flex;
+      position: fixed;
+      top: 50%;
+      left: calc(75% + 97.5px);
+      transform: translate(-50%, -50%);
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      z-index: 100;
+    }
+    .sidebar-logo {
+      width: 110px;
+      height: auto;
+    }
+    .home-btn {
+      display: inline-block;
+      padding: 14px 40px;
+      background: linear-gradient(180deg, #02897a 0%, #015a4f 100%);
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      border-radius: 9999px;
+      box-shadow: 0 4px 12px rgba(2,123,108,0.4), inset 0 2px 4px rgba(255,255,255,0.3);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .home-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(2,123,108,0.5), inset 0 2px 4px rgba(255,255,255,0.3);
+    }
+    .sidebar-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      list-style: none;
+      text-align: center;
+    }
+    .sidebar-nav a {
+      text-decoration: none;
+      color: rgba(0,0,0,0.55);
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+    .sidebar-nav a:hover {
+      color: #041D12;
+    }
+    .sidebar-nav a.active {
+      color: #041D12;
+      font-weight: 700;
+    }
+    .purchase-btn {
+      display: inline-block;
+      padding: 14px 40px;
+      background: linear-gradient(180deg, #f5b942 0%, #E49B0F 100%);
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      border-radius: 9999px;
+      box-shadow: 0 4px 12px rgba(228,155,15,0.4), inset 0 2px 4px rgba(255,255,255,0.3);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .purchase-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(228,155,15,0.5), inset 0 2px 4px rgba(255,255,255,0.3);
+    }
+  }
 </style>
 </head>
 <body>
@@ -49,5 +138,21 @@
   <img src="product/gold-barrel/gold-barrel_LP2/gold-barrel_lp2_image13-5.jpg" alt="ゴールドバレル 特典2">
   <img src="product/gold-barrel/gold-barrel_LP2/gold-barrel_lp2_image13-3.png" alt="ゴールドバレル 特典3">
 </div>
+
+<div class="sidebar-left">
+  <img src="logo/logo_image02.png" alt="パインハート" class="sidebar-logo">
+  <a href="index.html" class="home-btn">ホームに戻る</a>
+</div>
+
+<div class="sidebar-right">
+  <ul class="sidebar-nav">
+    <li><a href="smoothie.html">パインに夢中</a></li>
+    <li><a href="butter.html">パインバター</a></li>
+    <li><a href="compote.html">パインコンポート</a></li>
+    <li><a href="gold-barrel.html" class="active">ゴールドバレル</a></li>
+  </ul>
+  <a href="https://ec.pineheart.jp/product/gold-barrel" class="purchase-btn" target="_blank" rel="noopener">購入はこちら</a>
+</div>
+
 </body>
 </html>
