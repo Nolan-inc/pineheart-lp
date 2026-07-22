@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>パインハート LP一覧</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('back/lp_background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+    padding: 40px 16px;
+  }
+  .card {
+    width: 100%;
+    max-width: 480px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+    overflow: hidden;
+  }
+  .header {
+    background: linear-gradient(135deg, #041D12 0%, #0a3520 100%);
+    padding: 40px 24px 32px;
+    text-align: center;
+  }
+  .logo-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .logo-decoration .line {
+    display: block;
+    width: 32px;
+    height: 0.5px;
+    background: rgba(255,213,79,0.8);
+  }
+  .logo-decoration img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1) sepia(1) saturate(10) hue-rotate(15deg);
+  }
+  .header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.08em;
+    font-family: 'Shippori Mincho', serif;
+  }
+  .header h1 span {
+    color: #FFD54F;
+  }
+  .header p {
+    margin-top: 8px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.05em;
+  }
+  .links {
+    padding: 24px 20px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .lp-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: #FFF8E1;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    border: 1px solid rgba(228,155,15,0.15);
+  }
+  .lp-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(228,155,15,0.2);
+  }
+  .lp-link:active {
+    transform: translateY(0);
+  }
+  .lp-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #E49B0F, #FFD54F);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 24px;
+  }
+  .lp-text {
+    flex: 1;
+  }
+  .lp-text .name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 0.03em;
+  }
+  .lp-text .desc {
+    font-size: 11px;
+    color: #888;
+    margin-top: 2px;
+    letter-spacing: 0.02em;
+  }
+  .lp-arrow {
+    color: #E49B0F;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .footer-note {
+    text-align: center;
+    padding: 0 20px 24px;
+    font-size: 11px;
+    color: #aaa;
+    letter-spacing: 0.03em;
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="card">
+
+  <div class="header">
+    <div class="logo-decoration">
+      <span class="line"></span>
+      <img src="logo/logo_image01.png" alt="パインハート">
+      <span class="line"></span>
+    </div>
+    <h1>PINE<span>HEART</span> LP</h1>
+    <p>商品ランディングページ一覧</p>
+  </div>
+
+  <div class="links">
+    <a href="smoothie.html" class="lp-link">
+      <div class="lp-icon">🍍</div>
+      <div class="lp-text">
+        <div class="name">パインに夢中</div>
+        <div class="desc">ゴールドバレル スムージー</div>
+      </div>
+      <div class="lp-arrow">›</div>
+    </a>
+
+    <a href="butter.html" class="lp-link">
+      <div class="lp-icon">🧈</div>
+      <div class="lp-text">
+        <div class="name">パインバター</div>
+        <div class="desc">ゴールドバレル フルーツバター</div>
+      </div>
+      <div class="lp-arrow">›</div>
+    </a>
+
+    <a href="compote.html" class="lp-link">
+      <div class="lp-icon">🫙</div>
+      <div class="lp-text">
+        <div class="name">パインコンポート</div>
+        <div class="desc">ゴールドバレル コンポート</div>
+      </div>
+      <div class="lp-arrow">›</div>
+    </a>
+
+    <a href="gold-barrel.html" class="lp-link">
+      <div class="lp-icon">🌴</div>
+      <div class="lp-text">
+        <div class="name">ゴールドバレル</div>
+        <div class="desc">沖縄産プレミアムパイナップル</div>
+      </div>
+      <div class="lp-arrow">›</div>
+    </a>
+
+    <a href="subscription.html" class="lp-link">
+      <div class="lp-icon">📦</div>
+      <div class="lp-text">
+        <div class="name">定期便</div>
+        <div class="desc">パインに夢中 オーナーズクラブ</div>
+      </div>
+      <div class="lp-arrow">›</div>
+    </a>
+  </div>
+
+  <div class="footer-note">PINEHEART OKINAWA</div>
+
+</div>
+</body>
+</html>
